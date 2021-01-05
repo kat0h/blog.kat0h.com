@@ -19,7 +19,7 @@ paginate = 20
 [Author] # Used in authorbox
     name = "Kato-k"
     bio = "ただのこうこうせい"
-    avatar = "img/icon.JPG"
+    avatar = "img/avatar.png"
 
 [Params.style.vars]
   highlightColor = "#44617b"
