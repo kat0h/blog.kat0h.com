@@ -9,17 +9,17 @@ theme = "mainroad"
 
 paginate = 20
 
+[Author]
+    name = "Kato-k"
+    bio = "ただのこうこうせい"
+    avatar = "img/avatar.png"
+
 [Params]
     customCSS = ["css/notosansjp.css", "css/custom.css"]
     copyright = "Kota Kato"
     readmore = true
     authorbox = true
     post_meta = ["date", "categories"]
-
-[Author] # Used in authorbox
-    name = "Kato-k"
-    bio = "ただのこうこうせい"
-    avatar = "img/avatar.png"
 
 [Params.style.vars]
   highlightColor = "#44617b"
