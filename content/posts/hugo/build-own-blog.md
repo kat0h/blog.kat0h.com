@@ -14,3 +14,6 @@ https://itsys-tech.com/list/hugo/007/
 https://github.com/Vimux/Mainroad/  
 https://github.com/skanehira/blog  
 https://midorimici.com/posts/netlify-deploy-css-js/   
+
+## 補足
+かきかけ
