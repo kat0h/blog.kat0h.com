@@ -6,6 +6,7 @@ HasCJKLanguage = true
 
 title = "Kato-k's note"
 theme = "mainroad"
+googleAnalytics = "G-FK601ZGH1R"
 
 paginate = 20
 
@@ -33,3 +34,7 @@ paginate = 20
     list = "right"
     single = "right"
     widgets = ["search", "recent", "categories", "taglist", "social", "twitter"]
+    
+[[Menus.footer]]
+  Name = "プライバシーポリシー"
+  URL = "/privacy/"
