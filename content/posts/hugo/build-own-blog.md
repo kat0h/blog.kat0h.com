@@ -6,21 +6,27 @@ categories: ["hugo"]
 ---
 
 このサイトを作るにあたり参考にしたサイト。  
-まだリンクだけ
 
-https://track3jyo.com/2020/08/start-my-blog/  
+### https://track3jyo.com/2020/08/start-my-blog/  
+このブログと同じMainroadテーマを使われている方の解説。
 
-https://maku77.github.io/hugo/taxonomy/basic.html  
+### https://maku77.github.io/hugo/taxonomy/basic.html  
+HUGOのタグ・カテゴリについて。  
 
-https://terashim.com/posts/create-hugo-blog-and-customize-mainroad-theme/  
+### https://terashim.com/posts/create-hugo-blog-and-customize-mainroad-theme/  
+HUGO・Mainroadテーマの解説。詳細でわかりやすかった。  
 
-https://itsys-tech.com/list/hugo/007/  
+### https://itsys-tech.com/list/hugo/007/  
+Mainroadテーマの外観をカスタマイズするにあたって参考にした。  
 
-https://github.com/Vimux/Mainroad/  
+### https://github.com/Vimux/Mainroad/  
+Mainroadテーマの公式（一番初めに見るべき）
 
-https://github.com/skanehira/blog  
+### https://github.com/skanehira/blog  
+HUGOを使ったブログ。参考になった。
 
-https://midorimici.com/posts/netlify-deploy-css-js/   
+### https://midorimici.com/posts/netlify-deploy-css-js/   
+config.tomlのbaselinkをミスって詰まった時にみた。
 
-## 補足
-かきかけ
+とても助かった。  
+ありがたい  
