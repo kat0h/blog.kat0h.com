@@ -3,6 +3,7 @@ baseURL = "https://kato-k.github.io/blog/"
 languageCode = "ja"
 DefaultContentLanguage = "ja"
 HasCJKLanguage = true
+enableRobotsTXT = true
 
 title = "Kato-k's note"
 theme = "mainroad"
