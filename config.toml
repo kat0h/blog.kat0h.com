@@ -1,4 +1,4 @@
-baseURL = "https://kato-k.github.io/blog/"
+baseURL = "https://kato-k.github.io/"
 
 languageCode = "ja"
 DefaultContentLanguage = "ja"
