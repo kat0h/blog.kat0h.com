@@ -21,6 +21,8 @@ paginate = 20
     readmore = true
     authorbox = true
     post_meta = ["date", "categories"]
+    twitter_cards = true
+
 
 [Params.style.vars]
   highlightColor = "#44617b"
