@@ -22,9 +22,7 @@ paginate = 20
     authorbox = true
     post_meta = ["date", "categories"]
     twitter_cards = true
-
-[params]
-    og_image = "img/avatar.png"
+    images = ["img/avatar.png"]
 
 
 [Params.style.vars]
