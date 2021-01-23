@@ -94,7 +94,7 @@ endfunction
 
 そこで、▼新たに↓のような関数を定義しておくと良いでしょう。
 
-```
+```vim
 function L_eskk_get_mode()
     if (mode() == 'i') && eskk#is_enabled()
         return g:eskk#statusline()
