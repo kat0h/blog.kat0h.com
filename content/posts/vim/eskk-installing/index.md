@@ -92,7 +92,7 @@ endfunction
 
 `g:eskk#statusline()` 関数を使うと現在の変換モードを取得できるのですが、どうもLightline等に関数を設定するとVimの起動がめちゃ遅くなります。
 
-そこで、▼新たに↓のような関数を定義しておくと良いでしょう。
+そこで、新たに↓のような関数を定義しておくと良いでしょう。
 
 ```vim
 function L_eskk_get_mode()
