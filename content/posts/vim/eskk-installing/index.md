@@ -77,7 +77,8 @@ skkの入力では漢字を入力するたびにShiftキーを押すのですが
 
 のように入力できます。
 
-この動作を変更するには、
+この動作を変更し、StickyShiftを無効にするなどの設定は↓のように行うことができます。
+以下の例では、SrickyShiftのキーとして;を無効にし、Qを新たに割り当てています。
 ```vim
 autocmd User eskk-initialize-post call s:eskk_initial_pre()
 function! s:eskk_initial_pre() abort
