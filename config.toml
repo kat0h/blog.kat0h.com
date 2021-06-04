@@ -5,14 +5,14 @@ DefaultContentLanguage = "ja"
 HasCJKLanguage = true
 enableRobotsTXT = true
 
-title = "Kato-k's note"
+title = "忘れないように…"
 theme = "mainroad"
 
 paginate = 20
 
 [Author]
     name = "Kato-k"
-    bio = "ただのこうこうせい"
+    bio = ""
     avatar = "img/avatar.png"
 
 [Params]
