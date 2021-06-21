@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>忘れないように</title>
+  </head>
+
+  <body>
+    <h1>時間割をつぶやくTwitterBotを作った</h1>
+    <p class="renew">2021/01/17更新</p>
+
+    <p>
+      時間割の予定を毎日0:00分にツイートするスクリプトを書きました。<br/>
+      この記事ではスクリプトについて簡単に解説をします。
+    </p>
+
+    <p>
+      成果物はこちらです↓<br/>
+      <a href="https://github.com/kato-k/timetable_bot">kato-k/timetable_bot（Github）</a><br/>
+      <a href="https://twitter.com/timetable_ysr">Twitter（@timetable_ysr）</a>
+    </p>
+
+    <p>
+      Botの大まかな仕組みは
+      <code>
+        [Pythonスクリプト] -&gt; [twty] -&gt; [Twitter]
+      </code>
+      といった形になっており、一連の流れを記述したシェルスクリプトをcrontabを使いRaspberryPiで動かすことで自動ツイートを実現しております。
+    </p>
+
+    <h3>Pythonスクリプト</h3>
+    <p>
+      弊校の時間割はクラスごとのA週・B週2種類の時間割と、共通に割り当てられた{A, B}{月, 火,水 木, 金, 土, 日}の予定から決定されます。<br/>
+      ですので、こちらの2つの情報を総合することで特定の日時の時間割を求めることができます。
+    </p>
+
+    <img src="timetable_desition.png" alt="時間割決定の仕組み" style="width: 75%;"><br>
+    <s>スクリプト内でデータのCSVのパスを直接書き込んでるのは内緒</s>
+
+    <p>最後にスクリプト内でツイートする文面を作成しています。</p>
+
+    <h3>twty</h3>
+    <p>通常Twitterは、TwitterWebAppや公式のTwitterクライアントから投稿します。<br/>
+    これに対しTwitterBotはTwitterAPIを利用してツイートの投稿をします。<br/>
+    こちらのAPIはTwitterに申請をすることで取得できるのですが……</p>
+
+    <blockquote>
+      <p>Thank you for your interest in the Twitter developer platform. Based on our review of your use case, we are unable to approve your developer application at this time.
+      - Applications may be rejected if they are found to be in violation of any section of the Developer Agreement and Policy, Automation Rules, Display Requirements, and/or the Twitter Rules.
+      - We don’t currently allow you to appeal this decision. We are investigating options to allow people &gt; - who feel they’ve been inappropriately rejected to appeal. Please stay informed for future updates.
+      - We cannot comment on specific applications in public channels, including through official Twitter handles or our developer forum.</p>
+    </blockquote>
+
+    <blockquote>
+      <p>[意訳]<br/>
+      オメーのクソみてーなユースケースにAPIの利用権限渡すわけねーだろバーカ
+      - そもそもTwitterAPIの利用ポリシーに違反してんだよこのクズ
+      - 俺の決定は絶対だからな異議申し立て?んなこと受け付けるわけねーだろ
+      -  オメーはTwitterDevから永久追放な</p>
+    </blockquote>
+
+    <p>……F<strong>**</strong> Twitter!!!!</p>
+
+    <p>まあ、最後はキレ気味にメールに返信していたので仕方ないでしょう。<br/>
+    再申請も不可とか……???<br/>
+    そんなことがありましたので、shell上で動作するGolang製TwitterClientである<code>twty</code>をツイートに利用することにしました。</p>
+
+    <p><code>twty</code>はファイルから文面を読み込む場合、改行を含めて文章がツイートされます。<br/>
+    ですから、スクリプトで作成した文面を一時ファイルに保存してから<code>twty</code>を実行しています。</p>
+
+    <h3>crontab</h3>
+    <p>じゃあ以上で完成したシェルスクリプトをcrontabに登録して毎日、定期ツイートしましょう。<br/>
+    crontabの使い方なんて読者の方が詳しいでしょうから詳しくは書きません。<br/>
+    強いて言えばスクリプトの実行時のディレクトリにさえ気をつけれていれば無問題でしょう。</p>
+
+    <h3>まとめ</h3>
+    <p>以上がBotの解説です。<br/>
+    作ったものは基本的にツイートするだけのものですから、構造は非常に簡単なものです。</p>
+
+    <h3>最後に</h3>
+
+    <p>
+      <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">こちらのアカウントは一般に公開されてる情報を元にツイートしています。<br>情報の正確性には十分気をつけておりますが、間違いが含まれる可能性がございます。<br>また、アカウントの運営に問題がありましたらご連絡下さい。</p>&mdash; 鳩校1-1時間割Bot (@timetable_ysr) <a href="https://twitter.com/timetable_ysr/status/1348128939667910656?ref_src=twsrc%5Etfw">January 10, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      そういうことです
+    </p>
+
+
+    <br>
+    <div style="text-align: center;height: 35px;">
+      <a href="/"><img src="/assets/top.png" alt="TOP" style="height: 100%;"></a> 
+    </div>
+    <hr size=1 color="black"></hr>
+    <address>
+      Copyright (c) 2021 <a href="https://github.com/kato-k">Kota Kato</a>
+    </address>
+  </body>
+
+  <style>
+body {
+  background: url(/assets/background.png);
+  background-size: 60px;
+}
+    a {
+      word-break: break-all
+    }
+    h1 {
+      outline: double #000000;
+      text-align: center;
+      color: blue;
+      font-size: 35px;
+    } 
+    .renew {
+      text-align: right;
+      font-size: 15px;
+    }
+    address {
+      font-size: 15px;
+      text-align: center;
+    }
+    code {
+      background: black;
+      color: white;
+      width: 100%;
+      overflow: scroll;
+      padding: 3px;
+    }
+  </style>
+</html>

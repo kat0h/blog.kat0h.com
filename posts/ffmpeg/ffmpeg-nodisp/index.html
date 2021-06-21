@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>忘れないように</title>
+  </head>
+
+  <body>
+    <h1>[FFmpeg]  -nodispについて</h1>
+    <p class="renew">2021/01/05更新</p>
+
+    <h2>FFplayの音声再生時に画面出力をしない</h2>
+
+    <h3>結論</h3>
+    <code>
+      $ ffplay -nodisp <br>
+      $ ffplay -v quiet
+    </code>
+
+    <h3>解説</h3>
+
+    <h4>$ ffplay -nodisp</h4>
+
+    その名の通りグラフィカルな画面表示を無効化する<br>
+
+    <h4>$ ffplay -v quiet</h4>
+
+    -v は -loglevel のエイリアスでログレベルを指定する。<br>
+    quietは全てのshellの出力をとめる。<br>
+    error くらいが丁度良い。<br>
+
+    <h3>おまけ</h3>
+
+    以下のコマンドでNHK第一をShellから聴ける<br>
+
+    <code>$ ffplay -i 'https://nhkradioakr1-i.akamaihd.net/hls/live/511633/1-r1/1-r1-01.m3u8' -nodisp -v quiet&</code>
+
+    <h3>参考文献</h3>
+    <a href="https://ffmpeg.org/ffplay.html">https://ffmpeg.org/ffplay.html</a><br>
+    <a href="https://gist.github.com/riocampos/93739197ab7c765d16004cd4164dca73">https://gist.github.com/riocampos/93739197ab7c765d16004cd4164dca73</a><br>
+
+
+    <br>
+    <div style="text-align: center;height: 35px;">
+      <a href="/"><img src="/assets/top.png" alt="TOP" style="height: 100%;"></a> 
+    </div>
+    <hr size=1 color="black"></hr>
+    <address>
+      Copyright (c) 2021 <a href="https://github.com/kato-k">Kota Kato</a>
+    </address>
+  </body>
+
+  <style>
+    body {
+      background: url(/assets/background.png);
+      background-size: 60px;
+    }
+    a {
+      word-break: break-all
+    }
+    h1 {
+      outline: double #000000;
+      text-align: center;
+      color: blue;
+      font-size: 35px;
+    } 
+    .renew {
+      text-align: right;
+      font-size: 15px;
+    }
+    address {
+      font-size: 15px;
+      text-align: center;
+    }
+    code {
+      background: black;
+      color: white;
+      width: 100%;
+      overflow: scroll;
+      padding: 3px;
+    }
+  </style>
+</html>
