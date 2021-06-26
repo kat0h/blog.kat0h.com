@@ -206,6 +206,7 @@ https://github.com/mame/trance-book/blob/master/3-3/macro-quine.c<br>
     body {
       background: url(/lt/2021-06-26/Quine.png);
       background-size: 60px;
+      overflow-wrap : break-word;
     }
     a {
       word-break: break-all
@@ -227,7 +228,13 @@ https://github.com/mame/trance-book/blob/master/3-3/macro-quine.c<br>
     code {
       padding: 4px;
       word-break : break-all;
+      font-size: 3px;
       font-family: Consolas, Menlo, 'Liberation Mono', Courier, monospace;
+    }
+    pre.prettyprint {
+      line-height: 100%;
+      overflow-y: hidden;
+      overflow-x: scroll;
     }
   </style>
 </html>
