@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>忘れないように</title>
+  </head>
+
+  <body>
+    <h1>2020-06-26 LT 資料</h1>
+    <p class="renew">2020/06/26 更新</p>
+
+    <h2>タイトル：Quineで遊びましょう</h2>
+
+    <h3>
+      発表スライド
+    </h3>
+    <ul>
+      <li>
+        スライドをダウンロード<br>
+        <a href="https://github.com/kato-k/LT/blob/main/2021-06-Quine/LT.key?raw=true">
+          LT.key [3MB]
+        </a>
+      </li>
+      <li>
+        ブラウザでスライドを再生(7MBほどのデータをダウンロードします)<br>
+        <a href="./player">
+          プレイヤーを開く
+        </a>
+      </li>
+    </ul>
+
+    <h3>
+      発表で紹介したコード
+    </h3>
+    <h4>
+      基本のQuine
+    </h4>
+    <p>
+      Ruby<br>
+<pre class="prettyprint"><code>eval$s="puts('eval$s='+$s.inspect)"
+</code></pre>
+    </p>
+    <p>
+      C<br>
+<pre class="prettyprint"><code>#include &ltstdio.h&gt
+int main(){char*s="#include <stdio.h>%cint main(){char*s=%c%s%c;printf(s, 10, 34, s, 34);}";printf(s, 10, 34, s, 34);}</code></pre>
+    </p> 
+
+    <h4>
+      変種Quine
+    </h4>
+    <p>
+      Ruby<br>
+<pre class="prettyprint"><code>eval$s=    %w'b="B                                                  AhsK2Z/+    AMAAAA
+  AAPA       PPw                                                      84AA       AAA
+  AAA8      IDD                                                       AwcA      AAA
+  AAAA    8cP                                                         BwAA    AAA
+  AAAA   A8H                                                          PA4A   AAA
+  AAAD  A4w                       DPAQ                                AADw  AAA
+  PAcw  DM                        AAMA                                DAAA  AP
+  APwDwA//            AMeAAD    /APwH8Bw       84B8                   AwH8A/wE
+  8Dg8MDgDw         H8Dz  AID     DgwM       HADwP8Hw                 A8PBwgPt/
+  zwc8HPA/P         Bzg/   t/D    AQ8P      Dg     8PB                zgA8PDAg8
+  fBw8  MBDg               A8e    PDAc     /Dw      4IA               BAA8  8PPA
+  5vLx  zOADA             A58f    /vwf    fPA        DAP jhDw==";n=Ma rsha  l.loa
+  d(b.    unp       ack("m")[0    ]).t    o_s        (2) .reverse.sca n(/.    {1,
+  #{86    }}/)     .jo    in("    "&lt&lt1    0).        spl              it("    "&lt&lt1
+  0);e     ="ev   al$     s=%w    "&lt&lt3    9&lt&lt        ($s              *3);     c=0;
+  o=""      ;n.e  ach     {|i|    i.sp     lit       ("               ").e      ach{
+  |j|o      +=j==  "1"    ?e[c ]  :""&lt &lt32  ;c+    =j=                ="1"      ?1:0;
+ };o=o&lt    &lt10};o[  -7,6]=""&lt&lt3     9&lt&lt".     join";                 puts(o    )'.join
+</code></pre>
+
+    <p>
+      Ruby<br>
+<pre class="prettyprint"><code>eval$s=%w&#039;a=Array;s=
+                  34;b=a.new(s){a.new(s,0)};(0..
+              .s).each{|x|(0...s).each{|y|xx=x-s/2.1
+            ;yy=y-s/2.1;i=xx**2+yy**2;b[y][x]=(s/2.8)*
+          *2&lt;i&amp;&amp;i&lt;(s/2)**2?1:((i&lt;(s/20)**2)?1:0)}};l=Math;
+        t=Time.new;h,m=(                  t.hour%12+t.min*
+      0.00872664625)                          *0.5235,t.min*
+    0.1047;c=-&gt;(p,                                z,u,d,e){g=d
+    -z;i=(g&gt;=0)?                                    1:-1;o=e-u;j
+  =(o&gt;=0)?1:-1                                      ;g=g.abs*2;o
+  =o.abs*2;p                                          [u][z]=1;x=z
+  ;y=u;if(g&gt;                                            o);f=o-g/2
+;until(x==                                              d);k=f&gt;=0;
+y+=(k)?j:0                                              ;f-=(k)?g:
+0;x+=i;f+=                                                o;p[y][x]=
+1;end;else                                                ;f=g-o/2;u
+ntil(y==e)                                                ;if(f&gt;=0);
+x+=i;f-=o;                                                end;y+=j;f
++=g;p[y][x                                                ]=1;end;en
+d;};c.call                                                (b,s/2,s
+/2,(l.sin(                                              m)*(s/2.6)
++s/2).to_i,(                                            -l.cos(m)*
+  (s/2.5)+s/                                          2).to_i);c.c
+  all(b,s/2,s/                                        2,(l.sin(h
+    )*(s/5)+s/                                      2).to_i,(-l.
+    cos(h)*(s/4)                                  +s/2).to_i);
+      e=0;q=&quot;&quot;;b.eac                            h{|y|y.each{|x
+        |q+=(x==1)?(&quot;e                      val$s=%w&quot;&lt;&lt;39&lt;&lt;$
+        s*3)[e..e+1]:32.chr*           2;e+=(x==1)?2:0;};q
+            &lt;&lt;10};q[-33,6]=&quot;&quot;&lt;&lt;39&lt;&lt;&quot;.join&quot;;puts(q)#&#039;.join
+              ########################################
+                ########Analog Clock Quine########
+                    ##########################
+                            ##############
+
+</code></pre>
+
+    <p>
+      Ruby<br>
+<pre class="prettyprint"><code>eval$s=%w&#039;loop{a=Arr
+                  ay;s=34;b=a.new(s){a.new(s,0)}
+              ;(0...s).each{|x|(0...s).each{|y|xx=x-
+            s/2.1;yy=y-s/2.1;i=xx**2+yy**2;b[y][x]=(s/
+          2.8)**2&lt;i&amp;&amp;i&lt;(s/2)**2?1:((i&lt;(s/20)**2)?1:0)}};l=
+        Math;t=Time.new;                  h,m,v=(t.hour%12
+      +t.min*0.00872      66                  4625)*0.5235,t
+    .min*0.1047,t.                                sec*0.1047;c
+    =-&gt;(p,z,u,d,                                    e){g=d-z;i=(
+  g&gt;=0)?1:-1;o                                      =e-u;j=(o&gt;=0
+  )?1:-1;g=g                                        .abs*2;o=o.abs
+  *2;p[u][z]                                    =1;x    =z;y=u;if(
+g&gt;o);f=o-g                                    /2        ;until(x==
+d);k=f&gt;=0;                                  y+          =(k)?j:0;f
+-=(k)?g:0;                                x+              =i;f+=o;p[
+y][x]=1;en                            d;el                se;f=g-o/2
+;until(y==            e);if(f&gt;  =0);x+                    =i;f-=o;en
+d;y+=j;f+=                    g;p[y]                      [x]=1;end;
+end;};b[(-                                                l.cos(v)*(
+s/3)+s/2).                                                to_i][(l
+.sin(v)*(s                                              /3)+s/2).t
+o_i]=1;c.cal                                            l(b,s/2,s/
+  2,(l.sin(m                                          )*(s/2.6)+s/
+  2).to_i,(-l.                                        cos(m)*(s/
+    2.5)+s/2).                                      to_i);c.call
+    (b,s/2,s/2,(                                  l.sin(h)*(s/
+      5)+s/2).to_i,(                            -l.cos(h)*(s/4
+        )+s/2).to_i);e                      =0;q=&quot;&quot;;b.each{|
+        y|y.each{|x|q+=(x==1            )?(&quot;eval$s=%w&quot;&lt;&lt;39
+            &lt;&lt;$s*3)[e..e+1]:32.chr*2;e+=(x==1)?2:0;};q&lt;&lt;
+              10};q[-33,6]=&quot;&quot;&lt;&lt;39&lt;&lt;&quot;.join#&quot;;e=27.chr;p
+                uts(&quot;##{e}[1;1H#{e}[H#{e}[2J&quot;+10.c
+                    hr+q);sleep(1)}#loop{a=Arr
+                            ay;s=34;&#039;.join#
+</code></pre>
+
+    <p>
+      C<br>
+<pre class="prettyprint"><code>main(){char*s="main(){char*s=%c%s%c;printf(s, 34, s, 34);}";printf(s, 34, s, 34);}
+</code></pre>
+
+    <p>
+      C<br>
+<pre class="prettyprint"><code>#define ADD(a, b) (a + b)
+
+int main() {
+  printf("%d\n", ADD(1, 2));
+  return 0;
+}
+</code></pre>
+
+    <p>
+      C<br>
+<pre class="prettyprint"><code>#define QUOTE(s) #s
+
+int main() {
+  printf("%s\n", QUOTE(test test));
+  return 0;
+}
+</code></pre>
+
+    <p>
+      C<br>
+<pre class="prettyprint"><code>#define Q(a) char*s=#a;a
+Q(int main(){printf("#define Q(a) char*s=#a;a%cQ(%s)",10,s);})
+</code></pre>
+
+<h3>
+  参考文献
+</h3>
+https://mickey24.hatenablog.com/entry/20100915/ruby_udonge_quine<br>
+https://docs.ruby-lang.org/ja/latest/doc/symref.html<br>
+https://mametter.hatenablog.com/<br>
+https://github.com/mame/trance-book/blob/master/3-3/macro-quine.c<br>
+その他多くの記事(わすれてしまった)<br>
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    </p>
+    <br>
+    <div style="text-align: center;height: 35px;">
+      <a href="/"><img src="/assets/top.png" alt="TOP" style="height: 100%;"></a> 
+    </div>
+    <hr size=1 color="black"></hr>
+    <address>
+      Copyright (c) 2021 <a href="https://github.com/kato-k">Kota Kato</a>
+    </address>
+  </body>
+
+  <style>
+    body {
+      background: url(quine.png);
+      background-size: 60px;
+    }
+    a {
+      word-break: break-all
+    }
+    h1 {
+      outline: double #000000;
+      text-align: center;
+      color: blue;
+      font-size: 35px;
+    } 
+    .renew {
+      text-align: right;
+      font-size: 15px;
+    }
+    address {
+      font-size: 15px;
+      text-align: center;
+    }
+    code {
+      padding: 4px;
+      word-break : break-all;
+      font-family: Consolas, Menlo, 'Liberation Mono', Courier, monospace;
+    }
+  </style>
+</html>
