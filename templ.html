@@ -19,12 +19,14 @@
     <address>
       Copyright (c) 2021 <a href="https://github.com/kato-k">Kota Kato</a>
     </address>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   </body>
 
   <style>
     body {
       background: url(/assets/background.png);
       background-size: 60px;
+      overflow-wrap : break-word;
     }
     a {
       word-break: break-all
@@ -44,14 +46,15 @@
       text-align: center;
     }
     code {
-      background: black;
-      color: white;
-      width: 100%;
-      overflow: scroll;
-      padding: 3px;
+      padding: 4px;
+      word-break : break-all;
+      font-size: 3px;
+      font-family: Consolas, Menlo, 'Liberation Mono', Courier, monospace;
     }
-    .code {
-      background: black;
+    pre.prettyprint {
+      line-height: 100%;
+      overflow-y: hidden;
+      overflow-x: scroll;
     }
   </style>
 </html>
