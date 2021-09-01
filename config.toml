@@ -40,3 +40,8 @@ paginate = 20
 [[Menus.footer]]
   Name = "プライバシーポリシー"
   URL = "/privacy/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
