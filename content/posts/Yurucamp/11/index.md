@@ -5,6 +5,7 @@ categories: ["yurucamp"]
 tags: ["camp"]
 ---
 
+(C) あfろ・芳文社/野外活動委員会
 
 ゆるキャン△という女子高生がキャンプをするアニメーション作品があります。
 
@@ -22,8 +23,7 @@ tags: ["camp"]
 
 ## メッシュ焚き火
 
-{{<figure src="./1-00-00.jpg" width="50%">}}
-(C) あfろ・芳文社/野外活動委員会<br>ゆるキャン△一話より引用
+{{<figure src="./1-00-00.jpg">}}
 
 画面の真ん中に鎮座する焚き火台ですが、こちらは`UNIFLAME`の`ファイアスタンド`とみて間違いないでしょう。
 `UNIFLAME`は金物の町新潟県の燕市に本社を構える`新越ワークス`のアウトドアブランドです。
@@ -43,9 +43,6 @@ tags: ["camp"]
 
 ## OP
 ### マッチ
-{{<figure src="./1-01-10.jpg" width="50%">}}
-(C) あfろ・芳文社/野外活動委員会<br>ゆるキャン△一話より引用
-
 オープニングには一瞬だけマッチが映り込みます。
 箱の表面に桃の図柄が印刷されています。
 
@@ -59,10 +56,6 @@ tags: ["camp"]
 ※このリンクから購入をすることはお勧めしません。実店舗の方が圧倒的に安く買えます。
 
 ### カトラリー
-
-{{<figure src="./1-01-42.jpg" width="50%">}}
-(C) あfろ・芳文社/野外活動委員会<br>ゆるキャン△一話より引用
-
 単色のシルエットとしてケースに入ったカトラリーが写っています。
 ケースに収められたスプーン・フォーク・ナイフのセットです。
 ベルモントはUNIFLAMEと同じ燕の企業で、金物を得意としています。
@@ -84,9 +77,6 @@ Snow Peakにも同様の商品がありましたが、ナイフは付いてい�
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Dafuq happened <a href="https://twitter.com/PAROOKAVILLE?ref_src=twsrc%5Etfw">@PAROOKAVILLE</a> <a href="https://twitter.com/hashtag/emptytents?src=hash&amp;ref_src=twsrc%5Etfw">#emptytents</a> <a href="https://twitter.com/hashtag/parookaville?src=hash&amp;ref_src=twsrc%5Etfw">#parookaville</a> <a href="https://twitter.com/hashtag/amazing?src=hash&amp;ref_src=twsrc%5Etfw">#amazing</a> <a href="https://twitter.com/hashtag/festival?src=hash&amp;ref_src=twsrc%5Etfw">#festival</a> <a href="https://t.co/SH3czSxF4J">pic.twitter.com/SH3czSxF4J</a></p>&mdash; exSy (@exsytv) <a href="https://twitter.com/exsytv/status/1021419409284517889?ref_src=twsrc%5Etfw">July 23, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### 椅子
-{{<figure src="./1-02-31.jpg" width="50%">}}
-(C) あfろ・芳文社/野外活動委員会<br>ゆるキャン△一話より引用
-
 OPの最後に登場する椅子は`ヘリノックス`の`チェアツーホーム/ベージュ`のようです。
 背もたれ部分のフレーム形状が異なりますが、ほぼ一致しています。
 
@@ -145,9 +135,6 @@ LEDランタンであればここまで大きなサイズにする必要はな�
 |iPhone6s|外観からiPhone6と区別することはほぼ不可能です。感圧タッチ機能の有無が一番大きな違いです|
 |iPhone7|カメラ周りの素材がなめらかでボディと一体になっています|
 |iPhone8|背面がガラス素材です|
-
-{{<figure src="./1-06-46.jpg" width="50%">}}
-(C) あfろ・芳文社/野外活動委員会<br>ゆるキャン△一話より引用
 
 ### 自転車
 折り畳み自転車です。
@@ -225,8 +212,6 @@ LEDランタンであればここまで大きなサイズにする必要はな�
 {{<amazon src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=katok08-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B00M3T469W&linkId=e32512e1d084a1f3e6d6835a336a441f">}}
 
 ### テーブル
-{{<figure src="./1-01-47.jpg" width="50%">}}
-(C) あfろ・芳文社/野外活動委員会<br>ゆるキャン△一話より引用
 
 `キャプテンスタッグ`の`アルミ ロールテーブル`です。
 
