@@ -1,12 +1,12 @@
 ---
 title: "Vimにeskkをインストールする"
-date: 2021-01-23T17:10:07+09:00
+date: 2021-09-02
 categories: ["vim"]
 tags: ["vim", "skk"]
 ---
 
 ## はじめに
-Vim上での日本語入力の手段として[eskk.vim](https://github.com/tyru/eskk.vim)を導入しましたので自分用のメモも兼ねて残しておきます。
+Vim上での日本語入力の手段として[eskk.vim](https://github.com/tyru/eskk.vim)を導入しましたので自分用のメモも兼ねて残します。
 
 SKK・eskk.vim共にこれまで使ったことがないので、参考程度に見てください。
 
@@ -14,25 +14,25 @@ SKK・eskk.vim共にこれまで使ったことがないので、参考程度に
 ### eskk.vim
 https://github.com/tyru/eskk.vim
 
-好みのプラグインマネージャでeskkを導入します。
+好みのプラグインマネージャでeskkを導入してください。
 
 ### 辞書
-skkを使うには読みとの対応が列挙された辞書が必要になるので、ダウンロードして、eskkに教えてあげる必要があります。
+skkを使うには読みとの対応が列挙された辞書が必要になるので、ダウンロードしてeskkに教えてあげる必要があります。
 
-辞書ファイルはこちら↓などで公開されている物を利用させていただくと良いでしょう。
+辞書ファイルはこちら↓などで公開されている物を利用しましょう。
 
 https://skk-dev.github.io/dict/
 
-自分でファイルをダウンロードして配置するのも良いですが、それも面倒ですので、自動でダウンロードするスクリプトを用意しました。
+自分でファイルをダウンロードして配置することもできますが、面倒ですので、自動でダウンロードするスクリプトを用意しました。
 
 以下のスクリプトは辞書ファイルを ` ~/.config/eskk `  下にダウンロード・配置します。
 
-こちらは、~/.config/eskk 配下に辞書が無いときのみ発動するので、`.vimrc`にでも書き込んでおけば幸せになれます。
+`~/.config/eskk` 配下に辞書が無いときのみ発動します。
 
 ``` vim
-if !filereadable(expand('~/.config/eskk/jisyo'))
-    call system('mkdir -p ~/.config/eskk')
-    call system('cd ~/.config/eskk/ && wget http://openlab.jp/skk/dic/SKK-JISYO.L.gz && gzip -d SKK-JISYO.L.gz && nkf -Ew SKK-JISYO.L > jisyo && rm -f SKK-JISYO.L')
+if !filereadable(expand('~/.config/eskk/SKK-JISYO.L'))
+  call mkdir('~/.config/eskk', 'p')
+  call system('cd ~/.config/eskk/ && wget http://openlab.jp/skk/dic/SKK-JISYO.L.gz && gzip -d SKK-JISYO.L.gz')
 endif
 ```
 
@@ -42,16 +42,15 @@ endif
 
 let g:eskk#directory = "~/.config/eskk"
 let g:eskk#dictionary = { 'path': "~/.config/eskk/my_jisyo", 'sorted': 1, 'encoding': 'utf-8',}
-let g:eskk#large_dictionary = {'path': "~/.config/eskk/jisyo", 'sorted': 1, 'encoding': 'utf-8',}
+let g:eskk#large_dictionary = {'path': "~/.config/eskk/SKK-JISYO.L", 'sorted': 1, 'encoding': 'euc-jp',}
 
 ```
 
 ## skkの使い方
-以上の設定を終えた後、Insertモードで<C-j>をタイプすることでeskkが起動するはずです。
 
-この状態ではローマ字しか打てないのですが、漢字で打ちたい単語の初めの文字を大文字で打つことで、▽の文字が入りスペースキーで変換をすることが出来ます。
+https://dic.nicovideo.jp/a/skk
 
-また、それぞれのキーを押下することで、平仮名・片仮名・英数を入力できます。
+以上の設定を終えた後、Insertモードで<C-j>をタイプすることでeskkが起動するはずです。この状態ではローマ字しか打てないのですが、漢字で打ちたい単語の初めの文字を大文字で打つことで、▽の文字が入りスペースキーで変換をすることが出来ます。 また、それぞれのキーを押下することで、平仮名・片仮名・英数を入力できます。
 
 {{<figure src="./eskk.png" alt="モード" width="75%">}}
 
@@ -62,6 +61,12 @@ let g:eskk#large_dictionary = {'path': "~/.config/eskk/jisyo", 'sorted': 1, 'enc
 > OkuRiGana
 
 といった形で入力できます。
+
+カタカナモードなどに移行しなくても、変換の際スペースの代わりにモードキーを押して変換することもできます。
+
+> Unkoq
+> ↓
+> ウンコ
 
 ### StickyShift
 skkの入力では漢字を入力するたびにShiftキーを押すのですが、それでは小指が壊れてしまいます。
