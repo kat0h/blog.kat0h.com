@@ -1,6 +1,8 @@
 ---
 title: "Vimでmarkdownをプレビューするプラグインを作った"
-date: 2021-12-06
+date: "2021-12-06"
+categories: ["vim"]
+tags: ["markdown", "denops", "typescript"]
 ---
 
 VimでMarkdownをプレビューするプラグインを作成しました(この記事は9月にZennに投稿した記事と同じテーマです)
