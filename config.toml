@@ -28,8 +28,8 @@ paginate = 20
   highlightColor = "#e22d30"
 
 [Params.widgets.social]
-  twitter = "uvrub"
-  github = "kato-k"
+  twitter = "kat0h"
+  github = "kat0h"
 
 [Params.sidebar]
     home = "right"
