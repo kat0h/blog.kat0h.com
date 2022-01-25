@@ -9,7 +9,7 @@ tags: ["linux", "android", "termux"]
     - vim  
 
 必要なもの<br>
-    - Bluethooth接続のキーボード&マウス
+    - Bluethooth接続のキーボード&マウス  
 
 手順<br>
 大きく3つのステップに別れる<br>
