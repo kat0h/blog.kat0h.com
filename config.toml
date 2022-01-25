@@ -12,7 +12,6 @@ paginate = 20
 
 [Author]
     name = "kat0h"
-    bio = ""
     avatar = "img/avatar.png"
 
 [Params]
