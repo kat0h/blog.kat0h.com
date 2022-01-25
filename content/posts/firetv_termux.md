@@ -20,7 +20,6 @@ tags: ["linux", "android", "termux"]
     - F-droidの導入
     - Termuxの導入
     - sshdの設定
-
     - F-droidの導入
             - アプリケーションに管理にF-droidを用いる
                     - ApkPureなどの著作権を侵害したapkストアではない
