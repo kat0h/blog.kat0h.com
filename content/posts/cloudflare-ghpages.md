@@ -6,7 +6,7 @@ tags: ["cloudflare", "githubpages"]
 ---
 
 ## Cloud Flareでドメインを取得
-今回は`kat0h.com`を取得した (年間$8)
+今回Cloudflareで`kat0h.com`を取得した (年間$8)
 
 ## Github Pagesはホスティングにのみ使用する (`kat0h.github.io`)
 ### CloudFlareのネームサーバーを利用する
