@@ -6,8 +6,6 @@ categories: ["android"]
 tags: ["linux", "android", "termux"]
 ---
 
-# Amazon Fire TVにtermuxを導入
-
 できること<br>
     - python3などのスクリプトを実行
     - vim
