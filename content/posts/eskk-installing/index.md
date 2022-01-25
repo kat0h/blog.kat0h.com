@@ -1,7 +1,6 @@
 ---
 title: "Vimにeskkをインストールする"
 date: 2021-09-02
-categories: ["vim"]
 tags: ["vim", "skk"]
 ---
 

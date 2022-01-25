@@ -1,7 +1,6 @@
 ---
 title: "CloudflareとGithubPagesでブログ"
 date: "2022-01-25"
-categories: ["web"]
 tags: ["cloudflare", "githubpages"]
 ---
 

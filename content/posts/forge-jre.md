@@ -1,7 +1,6 @@
 ---
 title: "[1.12.2][JRE] Minecraft Forgeサーバが起動しないとき"
 date: "2022-01-24"
-categories: ["minecraft"]
 tags: ["minecraft", "java"]
 ---
 

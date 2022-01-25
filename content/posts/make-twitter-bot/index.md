@@ -2,7 +2,6 @@
 title: "時間割をつぶやくTwitterBotを作った"
 date: 2021-01-11T17:22:06+09:00
 tags: ["twitter", "python"]
-categories: ["twitter"]
 ---
 
 時間割の予定を毎日0:00分にツイートするスクリプトを書きました。  

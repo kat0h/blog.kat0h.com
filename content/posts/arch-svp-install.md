@@ -1,8 +1,7 @@
 ---
 title: "Arch LinuxにSVPを導入する"
 date: 2021-08-12
-categories: ["linux"]
-tags: ["arch", "svp"]
+tags: ["linux", "arch", "svp"]
 ---
 
 ## インストール

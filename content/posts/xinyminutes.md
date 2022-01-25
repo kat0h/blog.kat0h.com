@@ -1,7 +1,7 @@
 ---
 title: "Learn Vim in Y minutes"
 date: "2021-04-16"
-categories: ["vim"]
+tags: ["vim"]
 ---
 
 この文章は[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.en_US)の元で提供されている[learnxinyminutes-docs](https://github.com/adambard/learnxinyminutes-docs)の日本語訳です。  

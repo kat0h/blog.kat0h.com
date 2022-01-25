@@ -1,7 +1,7 @@
 ---
 title: "LT資料"
 date: 2021-06-26
-categories: ["LT"]
+tags: ["LT"]
 ---
 
 # 2020-06-26 LT 資料

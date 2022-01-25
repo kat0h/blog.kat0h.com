@@ -1,7 +1,6 @@
 ---
 title: "OSのダークモードにVimのcolorschemeを追従させるプラグイン"
 date: 2021-01-05
-categories: ["vim"]
 tags: ["vim", "mac"]
 ---
 

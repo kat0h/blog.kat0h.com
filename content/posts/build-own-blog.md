@@ -2,7 +2,6 @@
 title: "GithubPagesでブログを作る"
 date: 2021-01-06
 tags: ["hugo", "scrap"]
-categories: ["hugo"]
 ---
 
 このサイトを作るにあたり参考にしたサイト。  

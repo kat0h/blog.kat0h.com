@@ -2,7 +2,6 @@
 title: "Vim script で湯婆婆を実装してみる"
 date: 2021-01-05
 tags: ["vim", "scrap"]
-categories: ["vim"]
 ---
 
 ## はじめに

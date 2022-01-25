@@ -1,7 +1,6 @@
 ---
 title: "ddc.vimでのソースの扱い"
 date: "2021-12-05"
-categories: ["vim"]
 tags: ["vim", "ddc", "lsp"]
 ---
 

@@ -1,8 +1,6 @@
 ---
-title: "Amazon Fire TVにtermuxを導入
-"
+title: "Amazon Fire TVにtermuxを導入"
 date: "2022-01-25"
-categories: ["android"]
 tags: ["linux", "android", "termux"]
 ---
 

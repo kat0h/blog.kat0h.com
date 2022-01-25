@@ -1,7 +1,6 @@
 ---
 title: "[FFmpeg]  -nodispについて"
 date: 2021-01-05
-categories: ["ffmpeg"]
 tags: ["ffmpeg", "shell"]
 ---
 
