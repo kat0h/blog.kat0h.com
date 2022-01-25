@@ -5,7 +5,7 @@ DefaultContentLanguage = "ja"
 HasCJKLanguage = true
 enableRobotsTXT = true
 
-title = "忘れないように…"
+title = "kat0h's blog"
 theme = "mainroad"
 
 paginate = 20
