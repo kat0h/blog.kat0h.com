@@ -1,4 +1,4 @@
-baseURL = "https://kato-k.github.io/"
+baseURL = "https://blog.kat0h.com/"
 
 languageCode = "ja"
 DefaultContentLanguage = "ja"
@@ -11,7 +11,7 @@ theme = "mainroad"
 paginate = 20
 
 [Author]
-    name = "Kato-k"
+    name = "kat0h"
     bio = ""
     avatar = "img/avatar.png"
 
@@ -35,7 +35,7 @@ paginate = 20
     home = "right"
     list = "right"
     single = "right"
-    widgets = ["search", "recent", "categories", "taglist", "social", "twitter"]
+    widgets = ["search", "recent", "categories", "taglist", "social"]
 
 [[Menus.footer]]
   Name = "プライバシーポリシー"
