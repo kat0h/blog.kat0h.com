@@ -2,7 +2,6 @@
 title: "[SwiftUI] UIDocumentPickerViewController"
 date: "2022-02-10"
 tags: ["SwiftUI", "iOS"]
-comments: false
 ---
 
 ファイル選択ダイアログを表示する<br>
