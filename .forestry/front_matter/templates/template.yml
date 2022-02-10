@@ -20,8 +20,5 @@ fields:
   type: tag_list
   default: []
   label: タグ
-- name: comments
-  type: boolean
-  label: 下書き
 pages:
 - content/posts/b450m-steel-legend-wol.md
