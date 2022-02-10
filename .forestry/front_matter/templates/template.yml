@@ -1,4 +1,25 @@
 ---
 label: Template
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: date
+  type: datetime
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  label: 日付
+- name: tags
+  type: tag_list
+  default: []
+  label: タグ
+- name: comments
+  type: boolean
+  label: 下書き
