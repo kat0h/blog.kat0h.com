@@ -1,7 +1,6 @@
 +++
 comments = false
 date = 2022-02-09T15:00:00Z
-draft = true
 tags = ["PC"]
 title = "B450M Steel Legend WOL"
 
