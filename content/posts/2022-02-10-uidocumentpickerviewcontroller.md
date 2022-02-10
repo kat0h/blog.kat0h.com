@@ -11,15 +11,15 @@ tags: ["SwiftUI", "iOS"]
 サンドボックスの外にあるファイルへのアクセスを可能にする性質上さまざまな制約がある<br>
 公式ドキュメントを参照<br>
 
-📚 公式ドキュメント<br>
-    - [https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller](https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller)
+- 📚 公式ドキュメント<br>
+   - [https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller](https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller)
 
 - SwiftUI
-        - [https://capps.tech/blog/read-files-with-documentpicker-in-swiftui](https://capps.tech/blog/read-files-with-documentpicker-in-swiftui)
+  - [https://capps.tech/blog/read-files-with-documentpicker-in-swiftui](https://capps.tech/blog/read-files-with-documentpicker-in-swiftui)
                 - txtファイルを開くtutor
 
 - 複数選択を可能にする
-        - UIDocumentPickerViewControllerのインスタンスの`allowsMultipleSelection`を`true`にする
+  - UIDocumentPickerViewControllerのインスタンスの`allowsMultipleSelection`を`true`にする
 
 - 複数選択が機能しないとき
-        - [https://developer.apple.com/forums/thread/653192](https://developer.apple.com/forums/thread/653192)
+  - [https://developer.apple.com/forums/thread/653192](https://developer.apple.com/forums/thread/653192)
